@@ -1,9 +1,42 @@
-alias gs="git status"
-alias gc="git commit"
-alias ga="git add"
-alias gp="git push"
-alias plan="terragrunt plan"
-alias apply="terragrunt apply"
-alias force-apply="terragrunt apply --auto-approve"
+alias gs="git status"        # Check current repo status
+alias ga="git add"           # Add files to staging
+alias gc="git commit"        # Commit staged changes
+alias gcm="git commit -m"    # Commit with a message
+alias gp="git push"          # Push changes to remote
+alias gpl="git pull"         # Pull changes from remote
+alias gb="git branch"        # List branches
+alias gco="git checkout"     # Switch branches
+alias gl="git log --oneline --graph --decorate --all"  # Detailed log
+alias gd="git diff"          # Show changes
+alias grh="git reset --hard" # Hard reset
+alias gstash="git stash"     # Stash changes
+alias grm="git rm"           # Remove files from repo
+
+alias plan="terragrunt plan"                   # Plan infrastructure changes
+alias apply="terragrunt apply"                # Apply changes interactively
+alias force-apply="terragrunt apply --auto-approve"  # Apply without approval
+alias tginit="terragrunt init"                # Initialize Terragrunt
+alias tgfmt="terragrunt fmt"                  # Format Terragrunt code
+alias tgval="terragrunt validate"             # Validate configuration
+alias tglint="terragrunt validate --check-variables=false"  # Skip var check
+alias tgdestroy="terragrunt destroy"          # Destroy infrastructure
+alias tfgraph="terraform graph | dot -Tsvg -o graph.svg"  # Generate infra graph
+
+alias ll="ls -la"                   # Detailed file list
+alias la="ls -A"                    # List all files, including hidden
+alias l="ls -CF"                    # Compact list
+alias ..="cd .."                    # Go up one directory
+alias ...="cd ../.."                # Go up two directories
+alias c="clear"                     # Clear terminal screen
+alias reload="source ~/.bashrc"    # Reload bash configuration
+alias edit="code ."                 # Open current folder in VSCode
+alias path="echo $PATH"             # Show PATH variable
+
+alias jdk="export PATH=\"C:\Program Files\Microsoft\jdk-17.0.12.7-hotspot\bin:\$PATH\""  # Use your Java path
+alias myip="curl ifconfig.me"         # Check public IP
+alias ports="netstat -tuln"           # Check open ports
+alias mem="free -h"                   # Show memory usage
+alias cpu="lscpu"                     # Show CPU details
+alias df="df -h"                      # Disk usage summary
 
 echo "Loaded Aliases"
