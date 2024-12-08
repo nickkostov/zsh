@@ -1,0 +1,9 @@
+alias gs="git status"
+alias gc="git commit"
+alias ga="git add"
+alias gp="git push"
+alias plan="terragrunt plan"
+alias apply="terragrunt apply"
+alias force-apply="terragrunt apply --auto-approve"
+
+echo "Loaded Aliases"
