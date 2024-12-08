@@ -28,7 +28,7 @@ alias l="ls -CF"                    # Compact list
 alias ..="cd .."                    # Go up one directory
 alias ...="cd ../.."                # Go up two directories
 alias c="clear"                     # Clear terminal screen
-alias reload="source ~/.bashrc"    # Reload bash configuration
+alias reload="source ~/.zshrc"    # Reload zsh configuration
 alias edit="code ."                 # Open current folder in VSCode
 alias path="echo $PATH"             # Show PATH variable
 
